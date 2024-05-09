@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+    <script>
+        function checkAge() {
+            // Get the value entered in the age input field
+            var age = document.getElementById("age").value;
+
+            // Check if age is greater than 20
+            if (age > 20) {
+                document.getElementById("result").innerText = "You're old!";
+            } else {
+                document.getElementById("result").innerText = "You're young!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Age Checker</h1>
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age">
+    <button onclick="checkAge()">Check Age</button>
+    <p id="result"></p>
+</body>
+</html>
